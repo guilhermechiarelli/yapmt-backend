@@ -18,4 +18,4 @@ API created using NodeJS + Express + Mongoose + MongoDB.
 - Access the directory locally;
 - Run the command "npm install" to install all dependencies;
 - Run the command "npm run start" to start the project;
-- It will use the port 3000.
+- It will use the port 3333.
