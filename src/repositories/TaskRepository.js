@@ -62,7 +62,9 @@ class TaskRepository {
   }
 
   async findProjectTasks({ projectId = String }) {
-    const tasks = await this.ormRepository.find({ projectId });
+    const tasks = await this.ormRepository
+      .find({ projectId })
+      .sort({ dueDate: 1 });
 
     return tasks;
   }
